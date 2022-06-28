@@ -146,6 +146,11 @@ p {
     margin-left: 24px;
     width: 500px;
 }
+@media (max-width: 1024px) {
+    .king  {
+        width: 300px;
+    }
+}
 
 .is {
     text-transform: uppercase;
