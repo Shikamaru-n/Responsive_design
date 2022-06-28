@@ -1,41 +1,47 @@
 body {
     margin: 0px;
-    padding-left: 190px;
 }
 
+/* 
+@media () {
 
-main {
-    background-image: url(pics/bg.png);
-    background-repeat: repeat;
 }
+desktop: 1200px
+laptop:1024px
+tablet:760px
+mobile:480px
+*/
 
 ul.first {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    background-color: white;
-    font-size: 15px;
-    padding: 0px 15px;
-    width: 190px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+    ul.first {
+        font-size: 10px;
+        display: none;
+    }
 }
 
 li.money {
-    display: block;
-    padding: 10px 0px
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: 15px;
 }
 
 a {
     text-decoration: none;
 }
 
-#name {
-    font-size: 25px ;
-    padding: 50px 0px;
-}
- 
 .fa-solid {
-    margin-right: 15px;
+    padding-right: 5px;
+}
+
+main {
+    background-image: url(pics/bg.png);
+    background-repeat: repeat;
 }
 
 #intro {
@@ -47,14 +53,24 @@ a {
     height: 100vh;
 }
 
+@media (max-width: 1024px) {
+    #intro {
+        height: 20vh;
+    }
+}
+
 h1 {
-    /** position: absolute;
-    top: 25%;
-    left: 25%; **/
     font-size: 40px;
     font-weight: 600;
     color: red;
     margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 15px;
+        color: white;
+    }
 }
 
 /*.mame {
@@ -74,9 +90,25 @@ h3 {
     text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+    h3 {
+        font-size: 12px;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+}
+
 p {
     font-size: 1.68rem;
     line-height: 2.88rem;
+}
+
+@media (max-width: 1024px) {
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
 }
 
 #frog {
@@ -91,10 +123,22 @@ p {
     width: 700px;
     margin: 24px;
 }
+@media (max-width: 1024px) {
+    #noelle {
+        width: 100px;
+        margin: 10px;
+    }
+}
 
 .Asta {
     width: 700px;
     height: 100%
+}
+@media (max-width: 1024px) {
+    .Asta {
+        width: 100px;
+        height: 100%
+    }
 }
 
 .king {
@@ -108,9 +152,22 @@ p {
     font-size: 20px;
     padding-left: 70px;
 }
+@media (max-width: 1024px) {
+    .is {
+        font-size: 10px;
+        padding-left: 30px;
+        font-weight: 500;
+    }
+}
 
 li.jog {
-    list-style-type: disc !important; 
+    list-style-type: disc !important;
     font-size: 1.68rem;
     line-height: 2.88rem;
+}
+@media (max-width: 1024px) {
+    li.jog  {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }
